@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Demo Chart</title></head>
+<body>
+  <h3>Demo Chart — Lightweight Charts</h3>
+  <div id="chart" style="width:700px;height:350px;"></div>
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+  <script>
+    const chart = LightweightCharts.createChart(document.getElementById('chart'));
+    const line = chart.addLineSeries();
+    line.setData([
+      { time: '2024-12-01', value: 100 },
+      { time: '2024-12-02', value: 102 },
+      { time: '2024-12-03', value: 101 },
+      { time: '2024-12-04', value: 105 }
+    ]);
+  </script>
+</body>
+</html>
